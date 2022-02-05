@@ -17,13 +17,13 @@
     align-items: center;
     max-width:80rem ;
     margin: 0 auto;
-   
-    
 }
-.section{
-    
+#quiz{
+    padding: 100px 50px 170px 40px;
+    position: relative;
     background-color: white;
-    
+    justify-content: center;
+    border: 1px solid red;
 }
 h1, h2, h3 ,h4{
     margin-bottom: 1rem;
