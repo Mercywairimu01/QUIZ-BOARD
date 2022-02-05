@@ -1,0 +1,39 @@
+:root {
+    background-color:#DDC7A0;
+    font-size: 60%;
+}
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+.container{
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width:80rem ;
+    margin: 0 auto;
+   
+    
+}
+.section{
+    
+    background-color: white;
+    
+}
+h1, h2, h3 ,h4{
+    margin-bottom: 1rem;
+}
+h1{
+    font-size: 5.4rem;
+    color: black;
+    margin-bottom: 5rem;
+    background:#DDB083;
+    padding: 40px;
+    margin-top: -600px;
+    
+}

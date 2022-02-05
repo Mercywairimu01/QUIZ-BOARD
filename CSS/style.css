@@ -1,0 +1,20 @@
+.choices{
+    display: flex;
+    margin-bottom: 0.4rem;
+    width: 100px;
+    font-size: 1.6rem;
+    border: 0.1rem solid white;
+    background-color: rgb(209, 209, 30);
+}
+.choices:hover{
+    cursor: pointer;
+    box-shadow: none;
+    transform: translateY(-0.1rem);
+}
+.choice-prefix{
+    padding: 1.5rem 2.5rem;
+    color: white;
+}
+.choice-text{
+    padding: 1.5rem;
+}
