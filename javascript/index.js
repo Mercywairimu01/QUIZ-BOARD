@@ -98,24 +98,4 @@ function startQuiz() {
 function showResults() {
   const containers = document.querySelectorAll(".test");
 
-  questions.map((currentQuestion, questionNumber) => {
-    const container = containers[questionNumber];
-    const input = (
-      container.querySelector(
-        `input[name=${"ans" + questionNumber}]:checked`
-      ) || {}
-    ).value;
-
-    if (input === currentQuestion.answer) {
-      score++;
-    }
-  });
-  document.getElementById("score").innerHTML =
-    Math.floor((score / questions.length) * 100) + "%";
-
-  //reset the value to 0;
-  score = 0;
-}
-
-// Show the questions if the DOM is fully loaded
-window.onload = startQuiz;
+ 
