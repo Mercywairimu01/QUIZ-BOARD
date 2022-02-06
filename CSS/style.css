@@ -1,21 +1,35 @@
-.choices{
-    display: flex;
-    margin-bottom: 0.4rem;
-    width: 50px;
-    font-size: 1.9rem;
-    border: 0.1rem solid white;
-    background-color: rgba(236, 175, 96, 0.911);
+.choice {
+  display: flex;
+  margin-bottom: 0.4rem;
+  align-items: center;
+  font-size: 1.9rem;
+  border: 0.1rem solid white;
 }
-.choices:hover{
-    cursor: pointer;
-    box-shadow: none;
-    transform: translateY(-0.1rem);
+.choices:hover {
+  cursor: pointer;
+  box-shadow: none;
+  transform: translateY(-0.1rem);
 }
-.choice-prefix{
-    padding: 1.5rem 2.5rem;
-    color: white;
+.choice-prefix {
+  padding: 1.5rem 2.5rem;
+  color: white;
 }
-.choice-text{
-    padding: 1.7rem;
-    width: 100px;
+.choice-text {
+  padding: 1.7rem;
+}
+
+.rounded {
+  border-radius: 0.5rem;
+  color: white;
+}
+.score {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 10%;
+  padding: 1.5rem;
+}
+#score {
+  font-size: 2.5rem;
+  font-weight: bold;
 }
