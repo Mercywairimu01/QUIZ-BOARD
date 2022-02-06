@@ -98,4 +98,16 @@ function startQuiz() {
 function showResults() {
   const containers = document.querySelectorAll(".test");
 
+  questions.map((currentQuestion, questionNumber) => {
+    const container = containers[questionNumber];
+    const input = (
+      container.querySelector(
+        `input[name=${"ans" + questionNumber}]:checked`
+      ) || {}
+    ).value;
+
+    if (input === currentQuestion.answer) {
+      score++;
+    }
+  });
  
