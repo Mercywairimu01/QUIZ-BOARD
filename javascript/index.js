@@ -65,24 +65,35 @@ let questions =[
  
  
  startQuiz = ()  => {
-     questionCounter = 0;
-     score = 0;
-     availableQuestions = [...questions];
-     console.log(availableQuestions);
-     getNewQuestion();
- };
- getNewQuestion = () => {
-    questionCounter++;
-    const questionIndex = Math.floor(math.random()= availableQuestions.length);
-    currentQuestion = availableQuestions[questionIndex];
-    question.innerText = currentQuestion.question;
-    choices.forEach(choice => {
-       const number = choice.dataset["number"];
-       choice.innerText = currentQuestion["choice" + number];
-    });
-   
-    availableQuestions.splice(questionIndex, 1);
-    console.log(availableQuestions)
-    acceptingAnswers = true;  
+   questionCounter = 0;
+   score = 0;
+   availableQuestions = [...questions];
+   console.log(availableQuestions);
+   getNewQuestion();
 };
-choices.
+getNewQuestion = () => {
+   
+  questionCounter++;
+  const questionIndex =math.floor (math.random()= availableQuestions.length)
+  currentQuestion = availableQuestions[questionIndex];
+  question.innerText = currentQuestion.question;
+  choices.forEach(choice => {
+     const number = choice.dataset["number"];
+     choice.innerText = currentQuestion["choice" + number];
+  });
+ 
+  availableQuestions.splice(questionIndex, 1);
+  acceptingAnswers = true;  
+};
+choices.forEach(choice => {
+   choice.addEventListener("click", e =>{
+      if(!acceptingAnswers) return;
+
+      acceptingAnswers =false;
+      const selectedChoice = e.target;
+      const selectedAnswer =selectedChoice.dataset["number"];
+      console,log(selectedAnswer == currentQuestion.answer);
+      getNewQuestion();
+   });
+});
+ startQuiz();
